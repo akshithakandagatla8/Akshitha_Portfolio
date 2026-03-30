@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshitha Kandagatla | CS Engineer & AI Developer</title>
+  <meta name="description"
+    content="Personal portfolio of Akshitha Kandagatla — Computer Science undergraduate specializing in AI, Machine Learning, and full-stack web development." />
+  <meta name="keywords"
+    content="Akshitha Kandagatla, portfolio, AI developer, web development, Python, React, machine learning" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-dot"></span>
+      <div class="nav-brand-text">
+        <span class="nav-name">Akshitha K.</span>
+        <span class="nav-role">CS Engineer</span>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li class="nav-sep">|</li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li class="nav-sep">|</li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li class="nav-sep">|</li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li class="nav-sep">|</li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Resume</a></li>
+      <li class="nav-sep">|</li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-image-wrap" data-aos="fade-right">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-circle">
+          <img src="assets/profile.jpg" alt="Akshitha Kandagatla - Profile Photo" class="hero-photo" id="heroPhoto"
+            onerror="this.onerror=null;this.src='assets/profile.svg'" />
+        </div>
+        <div class="hero-badge hero-badge-ai">
+          <span>🤖</span> AI Enthusiast
+        </div>
+        <div class="hero-badge hero-badge-dev">
+          <span>💻</span> Full Stack Dev
+        </div>
+      </div>
+      <div class="hero-content" data-aos="fade-left">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Akshitha<br /><span class="hero-name-accent">Kandagatla</span></h1>
+        <p class="hero-title">Computer Science Engineer &amp; AI Developer</p>
+        <p class="hero-bio">
+          Motivated CS undergraduate passionate about Python, Artificial Intelligence,
+          and full-stack web development. Building practical solutions with cutting-edge
+          technology and a flair for intuitive design.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="cta-btn cta-btn-primary" id="heroProjectsBtn">
+            <span class="cta-icon">🚀</span> Projects
+          </a>
+          <a href="#experience" class="cta-btn cta-btn-secondary" id="heroResumeBtn">
+            <span class="cta-icon">📄</span> Resume
+          </a>
+          <a href="#contact" class="cta-btn cta-btn-tertiary" id="heroContactBtn">
+            <span class="cta-icon">✉️</span> Contact
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:akshithakandagatla4@gmail.com" class="social-link" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/akshithakandagatla" target="_blank" class="social-link" aria-label="LinkedIn"
+            title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://github.com/akshithakandagatla8" target="_blank" class="social-link" aria-label="GitHub"
+            title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get To Know Me</span>
+        <h2 class="section-title">A Bit <span class="accent">About Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <p class="about-summary">
+            I'm a <strong>Computer Science undergraduate</strong> at Sumathi Reddy Institute of Technology for Women,
+            Warangal, specializing in <strong>AI & Machine Learning</strong>. I love turning complex problems
+            into clean, intuitive digital experiences.
+          </p>
+          <p class="about-detail">
+            With hands-on internship experience in <strong>Artificial Intelligence and Generative AI</strong>
+            at YBI Foundation, I've built production-level projects ranging from personalized nutrition
+            assistants to ML-powered classification systems.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-card" data-aos="zoom-in" data-aos-delay="100">
+              <span class="highlight-icon">🏆</span>
+              <strong>3rd Place</strong>
+              <span>Project Expo 2025</span>
+            </div>
+            <div class="highlight-card" data-aos="zoom-in" data-aos-delay="200">
+              <span class="highlight-icon">🤖</span>
+              <strong>2 Months</strong>
+              <span>AI Internship</span>
+            </div>
+            <div class="highlight-card" data-aos="zoom-in" data-aos-delay="300">
+              <span class="highlight-icon">💡</span>
+              <strong>3+ Projects</strong>
+              <span>Built & Deployed</span>
+            </div>
+          </div>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">📍 Location</span>
+              <span class="info-value">Warangal, Telangana</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🎓 Degree</span>
+              <span class="info-value">B.Tech CSE (AI & ML)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📅 Graduation</span>
+              <span class="info-value">May 2027</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">💼 Status</span>
+              <span class="info-value">Open to Opportunities</span>
+            </div>
+          </div>
+
+          <div class="about-cta" style="margin-top: 2rem;" data-aos="fade-up" data-aos-delay="400">
+            <a href="assets/resume.jpg" download="Akshitha_Kandagatla_Resume.jpg" class="cta-btn cta-btn-primary">
+              <span class="cta-icon">📥</span> Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="about-visual" data-aos="fade-left">
+          <div class="about-img-wrap">
+            <img src="assets/profile2.jpeg" alt="Akshitha Kandagatla" class="about-photo"
+              onerror="this.onerror=null;this.src='assets/profile.svg'" />
+            <div class="about-img-deco"></div>
+          </div>
+          <div class="about-quote">
+            <blockquote>"Building the future, one line of code at a time."</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⌨️</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-yellow">Python</span>
+            <span class="skill-tag skill-tag-yellow">C</span>
+            <span class="skill-tag skill-tag-yellow">JavaScript</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Python</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90" style="--target-width:90%"></div>
+              </div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>JavaScript</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80" style="--target-width:80%"></div>
+              </div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>C</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="70" style="--target-width:70%"></div>
+              </div>
+              <span class="skill-pct">70%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-coral">HTML5</span>
+            <span class="skill-tag skill-tag-coral">CSS3</span>
+            <span class="skill-tag skill-tag-coral">React.js</span>
+            <span class="skill-tag skill-tag-coral">REST APIs</span>
+            <span class="skill-tag skill-tag-coral">Node.js</span>
+            <span class="skill-tag skill-tag-coral">Flask</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>React.js</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill coral" data-width="82" style="--target-width:82%"></div>
+              </div>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>HTML5/CSS3</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill coral" data-width="88" style="--target-width:88%"></div>
+              </div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>Node.js / Flask</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill coral" data-width="75" style="--target-width:75%"></div>
+              </div>
+              <span class="skill-pct">75%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🧠</span>
+            <h3>AI / Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-teal">Machine Learning</span>
+            <span class="skill-tag skill-tag-teal">Generative AI</span>
+            <span class="skill-tag skill-tag-teal">NumPy</span>
+            <span class="skill-tag skill-tag-teal">Pandas</span>
+            <span class="skill-tag skill-tag-teal">scikit-learn</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Machine Learning</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill teal" data-width="80" style="--target-width:80%"></div>
+              </div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>Generative AI</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill teal" data-width="75" style="--target-width:75%"></div>
+              </div>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span>NumPy / Pandas</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill teal" data-width="85" style="--target-width:85%"></div>
+              </div>
+              <span class="skill-pct">85%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Developer Tools &amp; Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-purple">Git</span>
+            <span class="skill-tag skill-tag-purple">GitHub</span>
+            <span class="skill-tag skill-tag-purple">VS Code</span>
+            <span class="skill-tag skill-tag-purple">Jupyter Notebook</span>
+          </div>
+          <div class="soft-skills-bubbles">
+            <span class="soft-bubble">Problem Solving</span>
+            <span class="soft-bubble">Analytical Thinking</span>
+            <span class="soft-bubble">Team Collaboration</span>
+            <span class="soft-bubble">Communication</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-list">
+
+        <!-- Project 1: NutriGuide -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100" id="project-nutriguide">
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-number">01</span>
+              <span class="project-type">Full Stack Web App</span>
+            </div>
+            <h3 class="project-title">NutriGuide</h3>
+            <p class="project-desc">
+              A personalized nutrition assistant web application built with a full-stack architecture.
+              Features AI-driven diet recommendations, calorie tracking, and nutritional analysis
+              based on user inputs such as age, weight, dietary preferences, and health goals.
+              Delivered an intuitive, responsive UI for maximum accessibility.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/akshithakandagatla8" target="_blank" class="project-link project-link-code"
+                aria-label="View code">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+                Code
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder proj-green">
+                <span class="proj-emoji">🥗</span>
+                <span class="proj-label">NutriGuide</span>
+                <div class="proj-tech-stack">Flask/React App</div>
+              </div>
+              <div class="project-img-deco"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Iris Flower Classification -->
+        <div class="project-card project-card-reverse" data-aos="fade-up" data-aos-delay="200" id="project-iris">
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <span class="project-type">Machine Learning App</span>
+            </div>
+            <h3 class="project-title">Iris Flower Classification</h3>
+            <p class="project-desc">
+              An end-to-end ML web application classifying Iris flower species using supervised
+              learning algorithms (scikit-learn) with high prediction accuracy. The frontend
+              uses HTML and CSS, deployed via Flask — demonstrating full-stack ML deployment skills.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">scikit-learn</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/akshithakandagatla8" target="_blank" class="project-link project-link-code"
+                aria-label="View code">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+                Code
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder proj-purple">
+                <span class="proj-emoji">🌸</span>
+                <span class="proj-label">Iris Classifier</span>
+                <div class="proj-tech-stack">ML + Flask App</div>
+              </div>
+              <div class="project-img-deco deco-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Portfolio -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300" id="project-portfolio">
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-number">03</span>
+              <span class="project-type">Frontend Project</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              A professional portfolio website developed using TypeScript and React to showcase
+              projects, technical skills, and academic achievements. Features a modern design
+              with smooth animations, responsive layout, and clean UI/UX.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/akshithakandagatla8" target="_blank" class="project-link project-link-code"
+                aria-label="View code">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+                Code
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder proj-yellow">
+                <span class="proj-emoji">🌐</span>
+                <span class="proj-label">Portfolio</span>
+                <div class="proj-tech-stack">TypeScript + React</div>
+              </div>
+              <div class="project-img-deco"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE / RESUME SECTION ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="accent">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline-flex">
+        <!-- Left Column: Experience -->
+        <div class="timeline-col" data-aos="fade-right">
+          <h3 class="timeline-col-title">
+            <span class="timeline-col-icon">💼</span> Work Experience
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot yellow"></div>
+              <div class="timeline-date">Jun 2024 — Aug 2024</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h4>AI &amp; Generative AI Intern</h4>
+                  <span class="timeline-company">YBI Foundation</span>
+                  <span class="timeline-location">📍 Remote</span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Completed a 2-month intensive internship focused on AI and Generative AI concepts, tools, and
+                    workflows.</li>
+                  <li>Gained hands-on experience with machine learning algorithms, neural networks, and generative AI
+                    models including large language models (LLMs).</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>AI</span><span>LLMs</span><span>Neural Networks</span><span>GenAI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="timeline-col-title mt-32">
+            <span class="timeline-col-icon">🏆</span> Achievements
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot coral"></div>
+              <div class="timeline-date">2025</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h4>3rd Place — Project Expo 2025</h4>
+                  <span class="timeline-company">Sumathi Reddy Institute of Technology for Women</span>
+                </div>
+                <p class="timeline-text">Secured 3rd place by presenting an innovative and practical tech solution,
+                  showcasing strong problem-solving and execution skills.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot teal"></div>
+              <div class="timeline-date">2024</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h4>AI &amp; Generative AI Internship Certificate</h4>
+                  <span class="timeline-company">YBI Foundation</span>
+                </div>
+                <p class="timeline-text">Successfully completed a 2-month internship covering AI fundamentals,
+                  generative AI, and applied machine learning projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Education -->
+        <div class="timeline-col" data-aos="fade-left">
+          <h3 class="timeline-col-title">
+            <span class="timeline-col-icon">🎓</span> Education
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot yellow"></div>
+              <div class="timeline-date">Aug 2023 — May 2027</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h4>B.Tech in Computer Science &amp; Engineering (CSM)</h4>
+                  <span class="timeline-company">Sumathi Reddy Institute of Technology for Women</span>
+                  <span class="timeline-location">📍 Warangal, Telangana</span>
+                </div>
+                <p class="timeline-text">Relevant coursework:</p>
+                <div class="timeline-tags">
+                  <span>Data Structures &amp; Algorithms</span>
+                  <span>OOP</span>
+                  <span>DBMS</span>
+                  <span>OS</span>
+                  <span>Computer Networks</span>
+                  <span>AI</span>
+                  <span>Machine Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-radar" data-aos="zoom-in" data-aos-delay="200">
+            <h3 class="timeline-col-title mt-32">
+              <span class="timeline-col-icon">📊</span> Skill Overview
+            </h3>
+            <div class="radar-chart-wrap">
+              <canvas id="radarChart" width="320" height="280" aria-label="Skill Radar Chart"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Have a project in mind? Want to collaborate? Or just want to say hi? I'd love to
+          hear from you!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <span class="contact-card-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:akshithakandagatla4@gmail.com" id="contactEmail">akshithakandagatla4@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <span>Warangal, Telangana, India</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card-icon">💼</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com/in/akshithakandagatla" target="_blank"
+                id="contactLinkedIn">linkedin.com/in/akshithakandagatla</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card-icon">🐙</span>
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/akshithakandagatla8" target="_blank"
+                id="contactGitHub">github.com/akshithakandagatla8</a>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formsubmit.co/akshithakandagatla4@gmail.com" method="POST" class="contact-form"
+          id="contactForm" data-aos="fade-left">
+          <!-- Hidden Fields for Formsubmit Configuration -->
+          <input type="hidden" name="_subject" value="New Message from Portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Optional: Redirect back to site after submit. If the site is deployed, change value to the actual URL -->
+          <input type="hidden" name="_next" value="window.location.href">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="First Name" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="Last Name" placeholder="Your last name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email Address</label>
+            <input type="email" id="emailInput" name="Email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="Subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="5" placeholder="Tell me about your project or idea..."
+              required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="submit-btn-text">Send Message</span>
+            <span class="submit-btn-icon">→</span>
+          </button>
+          <div class="form-feedback" id="formFeedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-dot"></span>
+        <span class="footer-name">Akshitha Kandagatla</span>
+      </div>
+      <p class="footer-tagline">CS Engineer · AI Developer · Lifelong Learner</p>
+      <div class="footer-socials">
+        <a href="mailto:akshithakandagatla4@gmail.com" aria-label="Email" class="footer-social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/akshithakandagatla" target="_blank" aria-label="LinkedIn"
+          class="footer-social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://github.com/akshithakandagatla8" target="_blank" aria-label="GitHub" class="footer-social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+          </svg>
+        </a>
+      </div>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Akshitha Kandagatla. Crafted with ❤️ and a lot of ☕</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

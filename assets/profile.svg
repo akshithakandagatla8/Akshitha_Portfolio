@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#b0b0b0"/>
+      <stop offset="100%" stop-color="#707070"/>
+    </radialGradient>
+    <radialGradient id="skinGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#d4a77a"/>
+      <stop offset="100%" stop-color="#b5845a"/>
+    </radialGradient>
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="200"/>
+    </clipPath>
+  </defs>
+  <!-- Background -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)"/>
+  <!-- Body / shoulders -->
+  <ellipse cx="200" cy="370" rx="140" ry="95" fill="#4a4a4a" clip-path="url(#circleClip)"/>
+  <!-- Neck -->
+  <rect x="175" y="260" width="50" height="55" rx="8" fill="url(#skinGrad)" clip-path="url(#circleClip)"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="195" rx="72" ry="82" fill="url(#skinGrad)"/>
+  <!-- Hair -->
+  <ellipse cx="200" cy="148" rx="74" ry="50" fill="#1a1a1a"/>
+  <ellipse cx="200" cy="135" rx="65" ry="38" fill="#1a1a1a"/>
+  <!-- Long hair left -->
+  <path d="M130 175 Q100 220 108 290 Q118 340 145 360" stroke="#1a1a1a" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <!-- Long hair right -->
+  <path d="M270 175 Q300 220 292 290 Q282 340 255 360" stroke="#1a1a1a" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <!-- Eyes -->
+  <ellipse cx="178" cy="200" rx="10" ry="9" fill="#2a1a0e"/>
+  <ellipse cx="222" cy="200" rx="10" ry="9" fill="#2a1a0e"/>
+  <circle cx="181" cy="197" r="3" fill="white" opacity="0.7"/>
+  <circle cx="225" cy="197" r="3" fill="white" opacity="0.7"/>
+  <!-- Eyebrows -->
+  <path d="M165 187 Q178 181 192 186" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M208 186 Q222 181 235 187" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M196 210 Q193 220 198 224 Q203 226 202 224 Q207 220 204 210" stroke="#9a6040" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Smile -->
+  <path d="M183 240 Q200 252 217 240" stroke="#9a5030" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Teeth hint -->
+  <path d="M188 241 Q200 248 212 241" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- Sweater/collar -->
+  <path d="M160 310 Q180 285 200 280 Q220 285 240 310 L260 400 L140 400 Z" fill="#8a7060" clip-path="url(#circleClip)"/>
+  <!-- Sweater texture lines -->
+  <line x1="170" y1="320" x2="168" y2="380" stroke="#7a6050" stroke-width="2" opacity="0.5"/>
+  <line x1="185" y1="310" x2="183" y2="390" stroke="#7a6050" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="305" x2="200" y2="395" stroke="#7a6050" stroke-width="2" opacity="0.5"/>
+  <line x1="215" y1="310" x2="217" y2="390" stroke="#7a6050" stroke-width="2" opacity="0.5"/>
+  <line x1="230" y1="320" x2="232" y2="380" stroke="#7a6050" stroke-width="2" opacity="0.5"/>
+  <!-- Sparkle (bottom right) -->
+  <g transform="translate(358, 358)">
+    <line x1="0" y1="-12" x2="0" y2="12" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="-8" y1="-8" x2="8" y2="8" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <line x1="8" y1="-8" x2="-8" y2="8" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  </g>
+</svg>
