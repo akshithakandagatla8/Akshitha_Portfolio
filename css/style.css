@@ -741,10 +741,12 @@ ul {
 
 .about-photo {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  filter: grayscale(20%);
+  filter: grayscale(0%);
   transition: filter var(--transition);
 }
 
@@ -1619,8 +1621,8 @@ ul {
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .about-info-grid { grid-template-columns: 1fr 1fr; }
-  .about-img-wrap { max-width: 100%; }
-  .about-photo { height: 300px; }
+  .about-img-wrap { max-width: 320px; width: 100%; margin: 0 auto; }
+  .about-quote { max-width: 320px; width: 100%; margin: 0 auto; }
   .radar-chart-wrap canvas { max-width: 260px; }
 }
 
